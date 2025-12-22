@@ -318,7 +318,7 @@ function controlUpdate() {
       paddleLeft.direction.y = paddleLeft.speed; //move down
     } else if (value === 87) {
       //W
-      paddleLeft.direction.y = paddleLeft.speed * 2; //move up
+      paddleLeft.direction.y = paddleLeft.speed * -1; //move up
     }
     //Right Paddle Control
     if (value === 40) {
@@ -326,7 +326,7 @@ function controlUpdate() {
       paddleRight.direction.y = paddleRight.speed; //move down
     } else if (value === 38) {
       //cursor-up
-      paddleRight.direction.y = paddleRight.speed * 1; //move up
+      paddleRight.direction.y = paddleRight.speed * -2; //move up
     }
     //Toggle Computer Control
     //1
