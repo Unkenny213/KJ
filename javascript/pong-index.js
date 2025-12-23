@@ -260,12 +260,12 @@ function ballReset() {
 function ballCheckMax() {
   ball.direction.x = clamp(
     ball.direction.x,
-    -1 * ball.maximum.x,
+    5 * ball.maximum.x,
     ball.maximum.x
   );
   ball.direction.y = clamp(
     ball.direction.y,
-    -1 * ball.maximum.y,
+    5 * ball.maximum.y,
     ball.maximum.y
   );
 }
@@ -326,7 +326,7 @@ function controlUpdate() {
       paddleRight.direction.y = paddleRight.speed; //move down
     } else if (value === 38) {
       //cursor-up
-      paddleRight.direction.y = paddleRight.speed * -2; //move up
+      paddleRight.direction.y = paddleRight.speed * -4; //move up
     }
     //Toggle Computer Control
     //1
